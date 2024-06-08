@@ -1,0 +1,121 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.padre{ display: flex;
+        flex-flow: column nowrap;
+}
+    .header{
+        background: #000;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .menu{
+            background:#850F8D ;
+            display: flex;
+            flex-flow: row nowrap;
+            height: 100px;
+            align-items: center;
+        }
+            .logo{
+                background: #C738BD;
+                flex: 1 1 auto;
+                height: 50px;
+            }
+            .nav{
+                background: #C738BD;
+                flex: 5 1 auto;
+                height: 50px;
+            }
+            .social{
+                background: #C738BD;
+                flex: 1 1 auto;
+                height: 50px;
+            }
+        .texto-principal{
+            background:#E49BFF ;
+        }
+            h1{
+                 background: #F8F9D7;
+            }
+    .section{
+        background: #000;
+        display: flex;
+    }
+        .articulos{
+            background: #FF204E;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article{
+                background: #A0153E ;
+                flex: 1 1 40%  ;
+            }
+            .navegacion{
+                background: #5D0E41;
+                flex: 1 1 100%;
+            }
+        .aside{
+            background: #5D0E41;
+            flex: 1 1 auto;
+        }
+            .publicidad{
+                background: #00224D;
+            }
+    .footer{
+        background: #000;
+        display: flex;
+        justify-content: center;
+    }
+        .pie{
+            background: #F97300;
+            width: 1000px;
+        }
+@media only screen and (max-width: 768px) {
+    .menu{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 180px;
+    }
+        .logo,.nav,.social{
+            flex: 1 1 auto; 
+            align-self: stretch;
+            height: 25px;
+        }
+    .section{
+        display:inline;
+        height: 380px;
+    }
+    .aside{
+        margin: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }  
+}
+@media only screen and (max-width: 600px){
+    .menu{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 180px;
+    }
+        .logo,.nav,.social{
+            flex: 1 1 auto; 
+            align-self: stretch;
+            height: 25px;
+        }
+    .section{
+        display:inline;
+        height: 500px;
+    }
+       
+            .article{
+                flex: 1 1 100%
+            }
+        .aside{
+            margin: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }  
+}
